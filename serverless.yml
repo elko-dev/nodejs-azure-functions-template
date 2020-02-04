@@ -1,0 +1,21 @@
+service: myapp
+provider:
+  name: azure
+  region: West US 2
+  runtime: nodejs10.x
+  environment:
+    VARIABLE_FOO: foo
+plugins:
+  - serverless-azure-functions
+package:
+  exclude:
+    - local.settings.json
+    - .vscode/**
+functions:
+  timer:
+    handler: src/handlers/timer.hello
+    events:
+      - timer: null
+        x-azure-settings:
+          schedule: '*/10 * * * * *'
+    name: myapp-dev-timer
