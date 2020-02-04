@@ -18,4 +18,4 @@ functions:
       - timer: null
         x-azure-settings:
           schedule: '*/10 * * * * *'
-    name: myapp-dev-timer
+    name: myapp-timer

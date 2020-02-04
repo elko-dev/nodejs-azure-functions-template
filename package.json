@@ -4,7 +4,8 @@
   "description": "Azure Functions sample for the Serverless framework",
   "scripts": {
     "test": "echo \"No tests yet...\"",
-    "start": "func host start"
+    "deploy": "./scripts/deploy.sh",
+    "start-local": "func host start"
   },
   "keywords": [
     "azure",
@@ -12,6 +13,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "serverless": "^1.62.0",
     "serverless-azure-functions": "^1.0.0"
   }
 }
