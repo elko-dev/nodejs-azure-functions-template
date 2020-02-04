@@ -1,5 +1,5 @@
 {
-  "name": "myapp",
+  "name": "my-app",
   "version": "1.0.0",
   "description": "Azure Functions sample for the Serverless framework",
   "scripts": {

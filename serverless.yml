@@ -1,4 +1,4 @@
-service: myapp
+service: my-app
 provider:
   name: azure
   region: West US 2
@@ -18,4 +18,4 @@ functions:
       - timer: null
         x-azure-settings:
           schedule: '*/10 * * * * *'
-    name: myapp-timer
+    name: my-app-timer
