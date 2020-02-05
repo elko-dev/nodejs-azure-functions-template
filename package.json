@@ -3,15 +3,27 @@
   "version": "1.0.0",
   "description": "Azure Functions sample for the Serverless framework",
   "scripts": {
-    "test": "echo \"No tests yet...\"",
     "deploy": "./scripts/deploy.sh",
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "tslint -p tsconfig.json -c tslint.json --fix",
+    "test:watch": "jest --watch",
+    "test:cover": "jest --coverage",
+    "test": "jest",
     "start-local": "func host start"
   },
   "keywords": [
     "azure",
     "serverless"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "@types/jest": "^25.1.1",
+    "@types/node": "^13.7.0",
+    "jest": "^25.1.0",
+    "ts-jest": "^25.2.0",
+    "tslint": "^6.0.0",
+    "tslint-config-standard": "^9.0.0",
+    "typescript": "^3.7.5"
+  },
   "devDependencies": {
     "serverless": "^1.62.0",
     "serverless-azure-functions": "^1.0.0"

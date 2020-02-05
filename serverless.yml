@@ -13,7 +13,7 @@ package:
     - .vscode/**
 functions:
   timer:
-    handler: src/handlers/timer.hello
+    handler: dist/timer.handler
     events:
       - timer: null
         x-azure-settings:
