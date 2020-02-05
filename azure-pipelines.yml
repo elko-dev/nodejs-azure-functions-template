@@ -22,7 +22,7 @@ steps:
 
 - script: |
     npm run deploy dev
-  displayName: 'deploy test'
+  displayName: 'deploy dev'
   env:
     AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
     AZURE_TENANT_ID: $(AZURE_TENANT_ID)
