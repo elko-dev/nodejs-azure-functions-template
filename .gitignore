@@ -93,3 +93,4 @@ obj
 appsettings.json
 local.settings.json
 local-deploy.sh
+.DS_Store
