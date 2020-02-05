@@ -1,7 +1,7 @@
 service: my-app
 provider:
   name: azure
-  region: West US 2
+  region: North Central US
   runtime: nodejs10.x
   environment:
     VARIABLE_FOO: foo
