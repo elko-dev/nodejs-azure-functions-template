@@ -4,7 +4,7 @@
   "description": "Azure Functions sample for the Serverless framework",
   "scripts": {
     "deploy": "./scripts/deploy.sh",
-    "build": "tsc -p tsconfig.build.json",
+    "build": "tsc -p tsconfig.build.json && sls package",
     "lint": "tslint -p tsconfig.json -c tslint.json --fix",
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage",
