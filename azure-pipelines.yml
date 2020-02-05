@@ -23,7 +23,24 @@ steps:
 - script: |
     npm run deploy dev
   displayName: 'deploy test'
-
+  env:
+    AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
+    AZURE_TENANT_ID: $(AZURE_TENANT_ID)
+    AZURE_CLIENT_ID: $(AZURE_CLIENT_ID)
+    AZURE_CLIENT_SECRET: $(AZURE_CLIENT_SECRET)
 - script: |
     npm run deploy stage
   displayName: 'deploy stage'
+  env:
+    AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
+    AZURE_TENANT_ID: $(AZURE_TENANT_ID)
+    AZURE_CLIENT_ID: $(AZURE_CLIENT_ID)
+    AZURE_CLIENT_SECRET: $(AZURE_CLIENT_SECRET)
+- script: |
+    npm run deploy prod
+  displayName: 'deploy prod'
+  env:
+    AZURE_SUBSCRIPTION_ID: $(AZURE_SUBSCRIPTION_ID)
+    AZURE_TENANT_ID: $(AZURE_TENANT_ID)
+    AZURE_CLIENT_ID: $(AZURE_CLIENT_ID)
+    AZURE_CLIENT_SECRET: $(AZURE_CLIENT_SECRET)
